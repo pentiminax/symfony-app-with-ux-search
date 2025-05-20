@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+    <twig:Mezcalito:UxSearch:Layout name="movie">
+        <twig:block name="hits">
+            <twig:DecoratedHits />
+        </twig:block>
+    </twig:Mezcalito:UxSearch:Layout>
+{% endblock %}
