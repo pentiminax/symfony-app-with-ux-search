@@ -3,7 +3,3 @@ meilisearch:
     api_key: '%env(MEILISEARCH_API_KEY)%' # API key to access the Meilisearch server (mandatory)
     prefix: '%env(MEILISEARCH_PREFIX)%'
     indices:
-        - name: movies
-          class: App\Entity\Movie
-          settings:
-              filterableAttributes: ['title']
