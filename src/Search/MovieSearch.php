@@ -6,7 +6,7 @@ use App\Entity\Movie;
 use Mezcalito\UxSearchBundle\Attribute\AsSearch;
 use Mezcalito\UxSearchBundle\Search\AbstractSearch;
 
-#[AsSearch('app_dev_movies')]
+#[AsSearch(Movie::class)]
 class MovieSearch extends AbstractSearch
 {
     public function build(array $options = []): void
